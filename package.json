@@ -1,15 +1,16 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "author": "",
+  "author": "afractal",
   "description": "",
   "license": "ISC",
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "node app.js"
   },
-  "dependencies": {
-    "lite-server": "^2.5.4"
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
   }
 }
