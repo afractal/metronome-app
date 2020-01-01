@@ -1,0 +1,15 @@
+
+
+
+--primary__background__color: #1e2526;
+--secondary__background__color: #343e40;
+--accent__color: blueviolet;
+
+rebeccapurple
+cornflowerblue
+
+
+
+
+
+
