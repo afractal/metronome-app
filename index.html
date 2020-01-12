@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./index.css">
@@ -24,9 +25,18 @@
       </div>
 
       <ul class="banner__list">
-        <li class="banner__item">FEATURES</li>
-        <li class="banner__item">ROADMAP</li>
-        <li class="banner__item">DOWNLOAD</li>
+        <li class="banner__item">
+          <a class="banner__link" href="#features">FEATURES</a>
+        </li>
+        <li class="banner__item">
+          <a class="banner__link" href="#roadmap">ROADMAP</a>
+        </li>
+        <li class="banner__item">
+          <a class="banner__link" href="#support">SUPPORT</a>
+        </li>
+        <li class="banner__item">
+          <a class="banner__link" href="#downloads">DOWNLOADS</a>
+        </li>
       </ul>
     </div>
 
@@ -38,22 +48,14 @@
       <div class="hero__title">
         Highly perfomant, easy to use, minimalistic digital metronome desktop app.
       </div>
-
-      <div class="hero_subtitle">
-        Wow, that's a lot of buzz words, but what does whose mean exactly:
-      </div>
-    </div>
-
-    <div class="hero__image__container">
-      <image class="hero__screenshot" />
     </div>
 
   </section>
 
-  <section class="features">
+  <section class="features" id="features">
 
     <div class="section-title">
-      <h3>FEATURES</h3>
+      <h4>FEATURES</h4>
     </div>
 
     <div class="feature">
@@ -97,59 +99,39 @@
 
   </section>
 
-  <section class="roadmap">
+  <section class="roadmap" id="roadmap">
 
     <div class="section-title">
-      <h3>ROADMAP</h3>
+      <h4>ROADMAP</h4>
     </div>
 
     <div class="future">
-      <div class="future__title">
-        Title 4
-      </div>
-      <div class="future__content">
-        Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
-      </div>
+      Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
     </div>
 
     <div class="future">
-      <div class="future__title">
-        Title 4
-      </div>
-      <div class="future__content">
-        Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
-      </div>
+      Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
     </div>
 
     <div class="future">
-      <div class="future__title">
-        Title 4
-      </div>
-      <div class="future__content">
-        Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
-      </div>
+      Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
     </div>
 
     <div class="future">
-      <div class="future__title">
-        Title 4
-      </div>
-      <div class="future__content">
-        Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
-      </div>
+      Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
     </div>
 
   </section>
 
-  <section class="downloads">
+  <section class="downloads" id="downloads">
 
     <div class="download">
       <a class="download__button">
         <div class="container">
-          <image class="download__image" />
+          <i class="fa fa-windows download__image"></i>
         </div>
         <div class="container">
-          <span class="download__text">DOWNLOAD WIN</span>
+          <span class="download__text">DOWNLOAD</span>
         </div>
       </a>
     </div>
@@ -157,10 +139,10 @@
     <div class="download">
       <a class="download__button">
         <div class="container">
-          <image class="download__image" />
+          <i class="fa fa-apple download__image"></i>
         </div>
         <div class="container">
-          <span class="download__text">DOWNLOAD MAC</span>
+          <span class="download__text">DOWNLOAD</span>
         </div>
       </a>
     </div>
@@ -169,20 +151,13 @@
 
   <footer class="footer__container">
 
-    <div class="banner">
-      <div class="banner__logo__container">
-        <image class="banner__logo" src="./Logo.png" />
-      </div>
-
-      <ul class="banner__list">
-        <li class="banner__item">FEATURES</li>
-        <li class="banner__item">ROADMAP</li>
-        <li class="banner__item">DOWNLOAD</li>
-      </ul>
-    </div>
-
-    <div>
-      Made with :heart: by @afractal. © 2020 metronome. All right reserved
+    <div class="copyright">
+      <span>
+        Metronome is designed & build with ❤ by <a class="link" href="https://github.com/afractal">@afractal</a>.
+      </span>
+      <span>
+        Copyright © 2020 Metronome. All rights reserved
+      </span>
     </div>
 
   </footer>
@@ -191,3 +166,8 @@
 
 
 </html>
+
+<!--
+<div class="hero__image__container">
+  <image class="hero__screenshot" src="./demo.png" />
+</div> -->
