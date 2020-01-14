@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Metronome</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web&display=swap" rel="stylesheet">
 
@@ -21,7 +22,7 @@
     <div class="banner">
       <div class="banner__logo__container">
         <image class="banner__logo" src="./Logo.png" />
-        <span class="banner__title">Metronome</span>
+        <!-- <span class="banner__title">Metronome</span> -->
       </div>
 
       <ul class="banner__list">
@@ -52,101 +53,111 @@
 
   </section>
 
-  <section class="features" id="features">
+  <section class="features__container" id="features">
 
-    <div class="section-title">
+    <div class="section__title">
       <h4>FEATURES</h4>
+      <hr />
     </div>
 
-    <div class="feature">
-      <div class="feature__title">
-        Performant
-      </div>
-      <div class="feature__content">
-        First, the timer engine is implemented in a highly performant way to ensure a great experience, not causing
-        any lags even when working the multiple apps.
-      </div>
-    </div>
+    <div class="features">
 
-    <div class="feature">
-      <div class="feature__title">
-        Minimalistic
+      <div class="feature">
+        <div class="feature__title">
+          Minimalistic
+        </div>
+        <div class="feature__content">
+          The UI is designed in a way to avoid a lot of labels to avoid cluter and to allow you to focus on whats
+          really important:- "creating".
+        </div>
       </div>
-      <div class="feature__content">
-        The UI is designed in a way to avoid a lot of labels to avoid cluter and to allow you to focus on whats
-        really important:- creating.
-      </div>
-    </div>
 
-    <div class="feature">
-      <div class="feature__title">
-        Intuitive
+      <div class="feature">
+        <div class="feature__title">
+          Intuitive
+        </div>
+        <div class="feature__content">
+          The tempo input supports different ways of interactions; you can use click and drag, use the scroll wheel or
+          just enter the tempo using you keyboard with the numpads.
+        </div>
       </div>
-      <div class="feature__content">
-        The tempo input supports different ways of interactions; you can use click and drag, use the scroll wheel or
-        just enter the tempo using you keyboard with the numpads.
-      </div>
-    </div>
 
-    <div class="feature">
-      <div class="feature__title">
-        Title 4
+      <div class="feature">
+        <div class="feature__title">
+          Performant
+        </div>
+        <div class="feature__content">
+          First, the timer engine is implemented in a highly performant way to ensure a great experience, not causing
+          any lags even when working the multiple apps.
+        </div>
       </div>
-      <div class="feature__content">
-        Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
+
+
+
+
+
+      <div class="feature">
+        <div class="feature__title">
+          Template
+        </div>
+        <div class="feature__content">
+          Global keyboard shortcuts enable you to make changes on fly, maximizing productivity.
+        </div>
       </div>
+
     </div>
 
   </section>
 
   <section class="roadmap" id="roadmap">
 
-    <div class="section-title">
-      <h4>ROADMAP</h4>
+    <div class="fit">
+      <div class="section__title_left">
+        <h4>CURRENT</h4>
+        <hr />
+      </div>
+
+      <ul class="futures">
+        <li class="future"> dark theme </li>
+        <li class="future"> basic subdivisions </li>
+        <li class="future"> windows support </li>
+        <li class="future"> titlebar v1 design </li>
+        <li class="future"> subdivisions v1 design </li>
+        <li class="future"> tempo input v1 design </li>
+        <li class="future"> stability improvements</li>
+        <li class="future"> primary clicker (ableton sounds)</li>
+      </ul>
     </div>
 
-    <ul class="futures">
-      <li class="future">
-        light theme
-      </li>
-      <li class="future">
-        ability to change time signatures
-      </li>
-      <li class="future">
-        decimal support for tempo
-      </li>
-      <li class="future">
-        click sounds picker
-      </li>
-      <li class="future">
-        volume control
-      </li>
-      <li class="future">
-        count in's support
-      </li>
-      <li class="future">
-        add beat indicator
-      </li>
-      <li class="future">
-        add ability to tap tempo
-      </li>
-      <li class="future">
-        support additional subdivisions
-      </li>
-      <li class="future">
-        pwa support
-      </li>
-      <li class="future">
-        high resolution timer (performance up to µs)
-      </li>
+    <div class="fit">
+      <div class="section__title_left">
+        <h4>UPCOMING</h4>
+        <hr />
       </div>
+
+      <ul class="futures">
+        <li class="future"> light theme </li>
+        <li class="future"> mac os support </li>
+        <li class="future"> ability to change time signatures </li>
+        <li class="future"> decimal support for tempo </li>
+        <li class="future"> click sounds picker </li>
+        <li class="future"> volume control </li>
+        <li class="future"> count in's support </li>
+        <li class="future"> beat indicator </li>
+        <li class="future"> tap tempo detection </li>
+        <li class="future"> support additional subdivisions</li>
+        <li class="future"> pwa support </li>
+        <li class="future"> high resolution timer </li>
+      </ul>
+    </div>
 
   </section>
 
   <section class="downloads" id="downloads">
 
-    <div class="section-title">
+    <div class="section__title">
       <h4>DOWNLOADS</h4>
+      <hr />
     </div>
 
     <div class="download__links">
@@ -157,7 +168,7 @@
             <i class="fa fa-windows download__image"></i>
           </div>
           <div class="container">
-            <span class="download__text">DOWNLOAD</span>
+            <span class="download__text">WINDOWS</span>
           </div>
         </a>
       </div>
@@ -168,7 +179,7 @@
             <i class="fa fa-apple download__image"></i>
           </div>
           <div class="container">
-            <span class="download__text">DOWNLOAD</span>
+            <span class="download__text">MAC 🚧 (WIP)</span>
           </div>
         </a>
       </div>
