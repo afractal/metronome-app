@@ -163,7 +163,7 @@ hr {
 
 .banner {
   height: 100%;
-  width: 60em;
+  width: 100%;
 
   display: inline-flex;
   flex-flow: row nowrap;
@@ -236,7 +236,7 @@ hr {
 /* ---HEADER--- */
 
 .header__container {
-  width: 100%;
+  width: 60em;
   /* padding: 1em; */
 
   display: inline-flex;
@@ -256,22 +256,12 @@ hr {
   margin-top: 1em;
 
   display: inline-flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
 
   align-items: center;
   justify-content: center;
 
   background-color: var(--secondary__background__color);
-}
-
-.hero__info__container {
-  height: 100%;
-
-  display: inline-flex;
-  flex-flow: row nowrap;
-
-  justify-items: center;
-  align-items: center;
 }
 
 .hero__title {
@@ -385,26 +375,8 @@ hr {
 
 /* ---DOWNLOADS--- */
 
-.downloads {
-  width: 60em;
-
-  margin-top: 2em;
-
-  display: inline-flex;
-  flex-flow: column nowrap;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.download__description {
-  font-size: 11pt;
-  color: var(--secondary__text__color);
-  opacity: 0.8;
-}
-
 .download__links {
-  margin-top: 1em;
+  margin: 2em 0 0 0;
 
   display: inline-flex;
   flex-flow: row nowrap;
@@ -414,12 +386,12 @@ hr {
 }
 
 .download {
-  height: 2.2em;
-  width: 13em;
+  height: 2em;
+  width: 10em;
 
   margin: 0 2em;
 
-  border: 1px solid var(--secondary__background__color);
+  border: 1px solid white;
   cursor: pointer;
 }
 
@@ -432,11 +404,11 @@ hr {
 }
 
 .download:hover .fa {
-  color: var(--accent__color);
+  /* color: var(--accent__color); */
 }
 
 .download:hover .download__text {
-  color: var(--accent__color);
+  /* color: var(--accent__color); */
 }
 
 .download__button {
@@ -458,7 +430,7 @@ hr {
 
 .download__button .container:first-child {
   flex-basis: 24%;
-  border-right: 1px solid var(--secondary__background__color);
+  border-right: 1px solid white;
 }
 
 /* .download__button .container:first-child:hover {
@@ -474,6 +446,8 @@ hr {
   padding: 0;
 
   font-size: large;
+  color: white;
+  fill: white;
 }
 
 .download__text {
@@ -485,6 +459,8 @@ hr {
 
   align-items: center;
   justify-content: center;
+
+  color: white;
 }
 
 /* ---SUPPORT--- */
