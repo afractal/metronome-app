@@ -97,7 +97,15 @@ hr {
   text-decoration: underline;
 }
 
-.link:hover {
+.link_inverse {
+  font-size: 11pt;
+  color: var(--secondary__text__color);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.link:hover,
+.link_inverse:hover {
   color: var(--accent__color);
 }
 
@@ -326,6 +334,7 @@ hr {
 
   font-size: 18px;
   font-weight: 800;
+  text-align: center;
 }
 
 .feature__content {
@@ -359,7 +368,7 @@ hr {
   align-items: center;
   justify-content: center;
 
-  list-style: square;
+  list-style: circle;
 }
 
 .future {
@@ -388,6 +397,12 @@ hr {
   justify-content: center;
 }
 
+.download__description {
+  font-size: 11pt;
+  color: var(--secondary__text__color);
+  opacity: 0.8;
+}
+
 .download__links {
   margin-top: 1em;
 
@@ -399,10 +414,10 @@ hr {
 }
 
 .download {
-  height: 2.6em;
-  width: 14em;
+  height: 2.2em;
+  width: 13em;
 
-  margin: 0 6em;
+  margin: 0 2em;
 
   border: 1px solid var(--secondary__background__color);
   cursor: pointer;
@@ -458,7 +473,7 @@ hr {
   margin: 0;
   padding: 0;
 
-  font-size: x-large;
+  font-size: large;
 }
 
 .download__text {
@@ -484,6 +499,22 @@ hr {
 
   align-items: flex-start;
   justify-content: center;
+}
+
+.support__description {
+  margin: 0 3em;
+
+  font-size: 11pt;
+  color: var(--secondary__text__color);
+  opacity: 0.8;
+}
+
+.support__links {
+  margin: 1em 3em 0 3em;
+
+  font-size: 11pt;
+  color: var(--secondary__text__color);
+  opacity: 0.8;
 }
 
 /* ---FOOTER--- */
