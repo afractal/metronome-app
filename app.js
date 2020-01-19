@@ -3,9 +3,11 @@ const browserSync = require('browser-sync');
 
 browserSync({
   server: './app.js',
-  serveStatic: [ './' ],
+  serveStatic: ['./'],
   files: [
     'index.html',
-    'index.css'
+    'index.css',
+    'index.js',
+    'particles.json'
   ]
 });

@@ -12,6 +12,7 @@
   /* rgb(245, 245, 245); */
   /* #e5edfb; */
   /* #1e2526; */
+
   --primary__background__color: rgb(250, 251, 252);
   --secondary__background__color: rgb(52, 62, 64);
   --accent__color: rgb(138, 43, 226);
@@ -32,6 +33,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: black;
+  z-index: 1;
   /* color: white; */
   /* border: 1px dashed cornflowerblue; */
 }
