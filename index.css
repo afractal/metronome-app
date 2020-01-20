@@ -484,7 +484,7 @@ hr {
 }
 
 .support__description {
-  margin: 0 3em;
+  margin: 0 2em;
 
   font-size: 11pt;
   color: var(--secondary__text__color);
@@ -492,7 +492,7 @@ hr {
 }
 
 .support__links {
-  margin: 1em 3em 0 3em;
+  margin: 1em 2em 0 2em;
 
   font-size: 11pt;
   color: var(--secondary__text__color);
