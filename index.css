@@ -509,7 +509,7 @@ hr {
   margin-top: 2em;
 
   display: inline-flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
 
   align-items: center;
   justify-content: center;
@@ -518,9 +518,18 @@ hr {
 }
 
 .copyright {
-  margin: 1em 0;
+  margin: 1em 0 0 1em;
 }
 
 .copyright span {
   color: white;
+}
+
+.privacy-policy {
+  margin: 0.4em 0 1em 0;
+}
+
+.privacy-policy span {
+  color: white;
+  font-size: x-small;
 }
