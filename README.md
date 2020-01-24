@@ -1,243 +1,104 @@
-## particles.js
+# Metronome
 
-### A lightweight JavaScript library for creating particles.
+[![CircleCI](https://circleci.com/gh/afractal/Metronome.svg?style=svg&circle-token=31596b82aa88ae1f1bbaced0a2a27743a53ab8ee)](https://circleci.com/gh/afractal/Metronome)
 
-------------------------------
-### `Demo / Generator`
+## **Features**
 
-<a href="http://vincentgarreau.com/particles.js/" target="_blank"><img src="http://vincentgarreau.com/particles.js/assets/img/github-screen.jpg" alt="particles.js generator" /></a>
+- simple & intuitive designer
+- ability to change the tempo fluently
+- subdivisions support
+- overlay ui
 
-Configure, export, and share your particles.js configuration on CodePen: <br />
-http://vincentgarreau.com/particles.js/
+## **Roadmap**
 
-CodePen demo: <br />
-http://codepen.io/VincentGarreau/pen/pnlso
+// TODO: add more
 
--------------------------------
-### `Usage`
+- keyboard shortcuts
+- time signatures
+- count-ins
 
-Load particles.js and configure the particles:
+## **Changes**
 
-**index.html**
-```html
-<div id="particles-js"></div>
+_v1.0_
 
-<script src="particles.js"></script>
-```
+- new overall design
+- new titlebar design
+- new subdivisions design
+- components ui improvements
+- logo design
+- added dark theme styling
+- enabled theming
+- tempo input usability improvements
+- stability improvements
+- non-blocking timer implementation
+- autoupdater support
+- configure windows distro
+- added licenses window (hidden)
 
-**app.js**
-```javascript
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-```
+_v0.3_
 
-**particles.json**
-```javascript
-{
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 10,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 80,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 300,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 12,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 800,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 800,
-        "size": 80,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-```
+- easier tempo methods
+- double click to reset tempo
+- support 16th notes subdivisions
 
--------------------------------
+_v0.2_
 
-### `Options`
+- add multiple beat sounds
+- improve sound engine logic
+- implement tempo change
+- play strong/weak beats (for 4/4)
+- support subdivisions
+- bpm input is editable
+- added ableton clicks as the default
 
-key | option type / notes | example
-----|---------|------
-`particles.number.value` | number | `40`
-`particles.number.density.enable` | boolean | `true` / `false` 
-`particles.number.density.value_area` | number | `800`
-`particles.color.value` | HEX (string) <br /> RGB (object) <br /> HSL (object) <br /> array selection (HEX) <br /> random (string) | `"#b61924"` <br /> `{r:182, g:25, b:36}` <br />  `{h:356, s:76, l:41}` <br /> `["#b61924", "#333333", "999999"]` <br /> `"random"`
-`particles.shape.type` | string <br /> array selection | `"circle"` <br /> `"edge"` <br /> `"triangle"` <br /> `"polygon"` <br /> `"star"` <br /> `"image"` <br /> `["circle", "triangle", "image"]`
-`particles.shape.stroke.width` | number | `2`
-`particles.shape.stroke.color` | HEX (string) | `"#222222"`
-`particles.shape.polygon.nb_slides` | number | `5`
-`particles.shape.image.src` | path link <br /> svg / png / gif / jpg | `"assets/img/yop.svg"` <br /> `"http://mywebsite.com/assets/img/yop.png"`
-`particles.shape.image.width` | number <br />(for aspect ratio) | `100`
-`particles.shape.image.height` | number <br />(for aspect ratio) | `100`
-`particles.opacity.value` | number (0 to 1) | `0.75`
-`particles.opacity.random` | boolean | `true` / `false` 
-`particles.opacity.anim.enable` | boolean | `true` / `false` 
-`particles.opacity.anim.speed` | number | `3`
-`particles.opacity.anim.opacity_min` | number (0 to 1) | `0.25`
-`particles.opacity.anim.sync` | boolean | `true` / `false`
-`particles.size.value` | number | `20`
-`particles.size.random` | boolean | `true` / `false` 
-`particles.size.anim.enable` | boolean | `true` / `false` 
-`particles.size.anim.speed` | number | `3`
-`particles.size.anim.size_min` | number | `0.25`
-`particles.size.anim.sync` | boolean | `true` / `false`
-`particles.line_linked.enable` | boolean | `true` / `false`
-`particles.line_linked.distance` | number | `150`
-`particles.line_linked.color` | HEX (string) | `#ffffff`
-`particles.line_linked.opacity` | number (0 to 1) | `0.5`
-`particles.line_linked.width` | number | `1.5`
-`particles.move.enable` | boolean | `true` / `false`
-`particles.move.speed` | number | `4`
-`particles.move.direction` | string | `"none"` <br /> `"top"` <br /> `"top-right"` <br /> `"right"` <br /> `"bottom-right"` <br /> `"bottom"` <br /> `"bottom-left"` <br /> `"left"` <br /> `"top-left"`
-`particles.move.random` | boolean | `true` / `false`
-`particles.move.straight` | boolean | `true` / `false`
-`particles.move.out_mode` | string <br /> (out of canvas) | `"out"` <br /> `"bounce"`
-`particles.move.bounce` | boolean <br /> (between particles) | `true` / `false`
-`particles.move.attract.enable` | boolean | `true` / `false`
-`particles.move.attract.rotateX` | number | `3000`
-`particles.move.attract.rotateY` | number | `1500`
-`interactivity.detect_on` | string | `"canvas", "window"`
-`interactivity.events.onhover.enable` | boolean | `true` / `false`
-`interactivity.events.onhover.mode` | string <br /> array selection | `"grab"` <br /> `"bubble"` <br /> `"repulse"` <br /> `["grab", "bubble"]`
-`interactivity.events.onclick.enable` | boolean | `true` / `false`
-`interactivity.events.onclick.mode` | string <br /> array selection | `"push"` <br /> `"remove"` <br /> `"bubble"` <br /> `"repulse"` <br /> `["push", "repulse"]`
-`interactivity.events.resize` | boolean | `true` / `false`
-`interactivity.events.modes.grab.distance` | number | `100`
-`interactivity.events.modes.grab.line_linked.opacity` | number (0 to 1) | `0.75`
-`interactivity.events.modes.bubble.distance` | number | `100`
-`interactivity.events.modes.bubble.size` | number | `40`
-`interactivity.events.modes.bubble.duration` | number <br /> (second) | `0.4`
-`interactivity.events.modes.repulse.distance` | number | `200`
-`interactivity.events.modes.repulse.duration` | number <br /> (second) | `1.2`
-`interactivity.events.modes.push.particles_nb` | number | `4`
-`interactivity.events.modes.push.particles_nb` | number | `4`
-`retina_detect` | boolean | `true` / `false`
+_v0.1_
 
--------------------------------
+- create initial ui design
+- add build system
+- add test suite
+- initialize project
+- add documentation
 
-### `Packages install`
+## **License**
 
-##### ***npm***
-https://www.npmjs.com/package/particles.js
-```
-npm install particles.js
-```
+This product is licensed under the [GPL-3.0](./LICENSE.md) license.
 
-##### ***Bower***
-```
-bower install particles.js --save
-```
+## Documentation
 
-##### ***Rails Assets***
-```
-gem 'rails-assets-particles.js'
-```
+Tempo range, from slowest to fastest:
 
-##### ***Meteor***
-https://atmospherejs.com/newswim/particles
-```
-meteor add newswim:particles
-```
+| Italian          | English                              | Number of beats per minute |
+| ---------------- | ------------------------------------ | -------------------------- |
+| Larghissimo      | very, very slow                      | < 24                       |
+| Adagissimo       | very slowly                          | ≈ 24                       |
+| Grave            | very slow                            | 25 – 45                    |
+| Largo            | broadly                              | 40 – 60                    |
+| Lento            | slowly                               | 45 – 60                    |
+| Larghetto        | rather broadly                       | 60 – 66                    |
+| Adagio           | slowly with great expression         | 66 – 76                    |
+| Adagietto        | slower than andante                  | 70 – 80                    |
+| Andante          | at a walking pace                    | 76 – 108                   |
+| Andantino        | slightly faster than andante         | 80 – 108                   |
+| Marcia moderato  | moderately, in the manner of a march | 83 – 85                    |
+| Andante moderato | between andante and moderato         | 92 – 112                   |
+| Moderato         | at a moderate speed                  | 108 – 120                  |
+| Allegretto       | moderately fast                      | 112 – 120                  |
+| Allegro moderato | close to, but not quite allegro      | 116 – 120                  |
+| Allegro          | fast, quickly, and bright            | 120 – 156                  |
+| Vivace           | lively and fast                      | 156 – 176                  |
+| Vivacissimo      | very fast and lively                 | 172 – 176                  |
+| Allegrissimo     | very fast                            | 172 – 176                  |
+| Presto           | very, very fast                      | 168 – 200                  |
+| Prestissimo      | even faster than presto              | > 200                      |
 
--------------------------------
+<p align="center">
+    made with :heart: by <a href="https://twitter.com/hermesgjini">me</a>
+</p>
 
-### `Hosting / CDN`
 
-***Please use this host or your own to load particles.js on your projects***
 
-http://www.jsdelivr.com/#!particles.js
+
+
+
+
+
