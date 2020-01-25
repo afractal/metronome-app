@@ -311,7 +311,7 @@ hr {
 }
 
 .screenshots {
-  margin: 2em 0;
+  margin: -2em 0 2em 0;
 
   display: inline-flex;
   flex-flow: row nowrap;
@@ -327,6 +327,14 @@ hr {
   margin: 0 4em;
 
   box-shadow: 0px 8px 20px 0px var(--secondary__background__color);
+}
+
+figcaption {
+  text-align: center;
+  /* font-style: italic; */
+  font-size: 11pt;
+  color: var(--secondary__text__color);
+  opacity: 0.8;
 }
 
 /* ---FEATURES--- */
