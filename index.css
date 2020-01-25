@@ -90,7 +90,7 @@ ul {
 
 hr {
   width: 4em;
-  margin: 0.2em 0 0 0;
+  margin: 0 0 0 0;
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
@@ -268,6 +268,7 @@ hr {
   justify-content: center;
 
   background-color: var(--secondary__background__color);
+  border: 0.4em solid var(--accent__color);
 }
 
 .hero__title {
