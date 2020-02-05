@@ -529,6 +529,17 @@ figcaption {
   fill: white;
 }
 
+.version__container {
+  color: white;
+  fill: white;
+}
+
+.version {
+  font-size: smaller;
+  color: white;
+  fill: white;
+}
+
 /* ---SUPPORT--- */
 
 .support {
