@@ -218,7 +218,7 @@ hr {
   flex-flow: row nowrap;
 
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .banner__link {
