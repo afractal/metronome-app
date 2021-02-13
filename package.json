@@ -1,9 +1,9 @@
 {
   "name": "site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "afractal",
   "description": "",
-  "license": "ISC",
+  "license": "GPLv3",
   "private": true,
   "main": "app.js",
   "scripts": {
@@ -12,6 +12,6 @@
   "dependencies": {},
   "devDependencies": {
     "@types/browser-sync": "^2.26.1",
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.14"
   }
 }

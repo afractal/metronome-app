@@ -191,7 +191,7 @@ hr {
 
 .banner__logo {
   height: 3em;
-  width: 10em;
+  width: 11em;
 
   object-fit: contain;
   /* object-position: left; */
@@ -233,7 +233,7 @@ hr {
 }
 
 .banner__item {
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: bold;
   padding: 0 1.6em;
   /* margin: 0 1em; */
@@ -243,7 +243,7 @@ hr {
 
 .header__container {
   width: 80%;
-  /* padding: 1em; */
+  padding: 1em;
 
   display: inline-flex;
   flex-flow: column nowrap;
@@ -255,7 +255,7 @@ hr {
 /* ---HERO--- */
 
 .hero__container {
-  height: 16em;
+  height: 18em;
   width: 100%;
   /* width: 100%; */
 
@@ -430,7 +430,7 @@ figcaption {
 /* ---DOWNLOADS--- */
 
 .download__links {
-  margin: 1em 0 1em 0;
+  margin: 2em 0 2em 0;
 
   display: inline-flex;
   flex-flow: row nowrap;
@@ -586,6 +586,7 @@ figcaption {
   justify-content: center;
 
   background-color: var(--secondary__background__color);
+  border-top: 0.4em solid var(--accent__color);
 }
 
 .copyright {
