@@ -9,14 +9,6 @@
 - subdivisions support
 - overlay ui
 
-## **Roadmap**
-
-// TODO: add more
-
-- keyboard shortcuts
-- time signatures
-- count-ins
-
 ## **Changes**
 
 _v1.0_
@@ -59,10 +51,6 @@ _v0.1_
 - initialize project
 - add documentation
 
-## **License**
-
-This product is licensed under the [GPL-3.0](./LICENSE.md) license.
-
 ## Documentation
 
 Tempo range, from slowest to fastest:
@@ -91,8 +79,12 @@ Tempo range, from slowest to fastest:
 | Presto           | very, very fast                      | 168 – 200                  |
 | Prestissimo      | even faster than presto              | > 200                      |
 
+## **License**
+
+This product is licensed under the [GPL-3.0](./LICENSE.md) license.
+
 <p align="center">
-    made with :heart: by <a href="https://twitter.com/hermesgjini">me</a>
+    Made with :heart: by <a href="https://twitter.com/afractally">@afractally</a>
 </p>
 
 
