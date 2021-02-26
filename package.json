@@ -1,11 +1,11 @@
 {
-  "name": "site",
-  "version": "1.0.1",
+  "name": "metronome-app",
+  "version": "1.0.2",
   "author": "afractal",
-  "description": "",
-  "license": "GPLv3",
-  "private": true,
+  "description": "Highly performant, easy to use, minimalistic digital metronome desktop app.",
+  "license": "MIT",
   "main": "app.js",
+  "private": true,
   "scripts": {
     "start": "node app.js"
   },
